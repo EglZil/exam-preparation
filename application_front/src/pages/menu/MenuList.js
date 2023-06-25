@@ -59,6 +59,7 @@ export function MenuList() {
                 <TableCell>Menu title</TableCell>
                 <TableCell></TableCell>
                 <TableCell></TableCell>
+                <TableCell></TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -68,6 +69,11 @@ export function MenuList() {
                   <TableCell>
                     <Link to={"/menus/view/" + menu.id}>
                       <Button variant="contained">View</Button>
+                    </Link>
+                  </TableCell>
+                  <TableCell>
+                    <Link to={"/menus/edit/" + menu.id}>
+                      <Button variant="contained">Edit</Button>
                     </Link>
                   </TableCell>
                   <TableCell>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import {
   Grid,
   Container,
@@ -10,6 +10,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  Button,
 } from "@mui/material";
 
 export function ViewMenu() {
@@ -59,6 +60,11 @@ export function ViewMenu() {
               </TableBody>
             </Table>
           </TableContainer>
+        </Grid>
+        <Grid marginTop={2}>
+          <Link to="/menus">
+          <Button variant="contained">Back</Button>
+          </Link>
         </Grid>
       </Container>
     </div>
